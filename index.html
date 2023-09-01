@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="calculator">
+		<div class="display">
+			<input type="text" id="result" disabled>
+		</div>
+		<div class="row">
+			<button class="btn btn-clear" onclick="clearResult()">C</button>
+			<button class="btn btn-operator" onclick="addToResult('%')">%</button>
+			<button class="btn btn-operator" onclick="addToResult('^')">^</button>
+			<button class="btn btn-operator" onclick="addToResult('/')">/</button>
+		</div>
+		<div class="row">
+			<button class="btn btn-number" onclick="addToResult('7')">7</button>
+			<button class="btn btn-number" onclick="addToResult('8')">8</button>
+			<button class="btn btn-number" onclick="addToResult('9')">9</button>
+			<button class="btn btn-operator" onclick="addToResult('*')">*</button>
+		</div>
+		<div class="row">
+			<button class="btn btn-number" onclick="addToResult('4')">4</button>
+			<button class="btn btn-number" onclick="addToResult('5')">5</button>
+			<button class="btn btn-number" onclick="addToResult('6')">6</button>
+			<button class="btn btn-operator" onclick="addToResult('-')">-</button>
+		</div>
+		<div class="row">
+			<button class="btn btn-number" onclick="addToResult('1')">1</button>
+			<button class="btn btn-number" onclick="addToResult('2')">2</button>
+			<button class="btn btn-number" onclick="addToResult('3')">3</button>
+			<button class="btn btn-operator" onclick="addToResult('+')">+</button>
+		</div>
+		<div class="row">
+			<button class="btn btn-number" onclick="addToResult('0')">0</button>
+			<button class="btn btn-number" onclick="addToResult('.')">.</button>
+			<button class="btn btn-operator" onclick="negateResult()">+/-</button>
+			<button class="btn btn-operator" onclick="calculateResult()">=</button>
+		</div>
+		<div class="row">
+			<button class="btn btn-operator" onclick="addToResult('(')">(</button>
+			<button class="btn btn-operator" onclick="addToResult(')')">)</button>
+			<button class="btn btn-operator" onclick="backspaceResult()">&larr;</button>
+			<button class="btn btn-operator" onclick="addToResult('Math.PI')">π</button>
+			<button class="btn btn-operator" onclick="addToResult('Math.E')">e</button>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
